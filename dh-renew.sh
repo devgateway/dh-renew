@@ -35,7 +35,7 @@ EOF
 fi
 
 TMP="$(mktemp)"
-if nice -n "$NICENESS" openssl dhparam -out "$TMP" "$DH_BITS"; then
+if nice -n "$NICENESS" openssl dhparam -out "$TMP" "$DH_BITS" 2>/dev/null; then
   mv -f "$TMP" "$1"
   shift
   if [ -n "$@" ]; then
