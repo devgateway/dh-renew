@@ -1,5 +1,5 @@
 [Unit]
-Description=DH param update for OpenLDAP server
+Description=DH param update for %I
 
 [Timer]
 OnCalendar=weekly

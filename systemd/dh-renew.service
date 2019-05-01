@@ -1,6 +1,0 @@
-[Unit]
-Description=DH param update for OpenLDAP server
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/dh-renew.sh /etc/ssl/slapd.dhparams systemctl restart slapd.service
