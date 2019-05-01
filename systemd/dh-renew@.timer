@@ -4,3 +4,6 @@ Description=DH param update for %I
 [Timer]
 OnCalendar=weekly
 Persistent=true
+
+[Install]
+WantedBy=multi-user.target
