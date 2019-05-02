@@ -3,4 +3,4 @@ Description=DH param update for %I
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/dh-renew.sh /etc/ssl/%i.dhparams systemctl try-reload-or-restart %i.service
+ExecStart=/usr/local/bin/dh-renew.sh /etc/ssl/%i.dhparam systemctl try-reload-or-restart %i.service
